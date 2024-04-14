@@ -83,8 +83,8 @@ OB_PREOP_CALLBACK_STATUS PreOperationCallback(PVOID RegistrationContext, POB_PRE
 			{
 				DbgPrint("Attempt to terminate process by PID: %lu\n", HandleToULong(CurrentProcessPid));
 				//OperationInformation->Parameters->CreateHandleInformation.DesiredAccess &= ~PROCESS_TERMINATE;
-				OperationInformation->Parameters->CreateHandleInformation.DesiredAccess = SYNCHRONIZE | PROCESS_QUERY_LIMITED_INFORMATION;
-				OperationInformation->Parameters->DuplicateHandleInformation.DesiredAccess = SYNCHRONIZE | PROCESS_QUERY_LIMITED_INFORMATION;
+				OperationInformation->Parameters->CreateHandleInformation.DesiredAccess = 0;
+				OperationInformation->Parameters->DuplicateHandleInformation.DesiredAccess = 0;
 			}
 		}
 	}
@@ -100,7 +100,8 @@ VOID enableProtection() // Double check this to make sure its setup properly
 
     // Set up operation registration for process handles
     OperationRegistrations[0].ObjectType = PsProcessType;
-    OperationRegistrations[0].Operations = OB_OPERATION_HANDLE_CREATE | OB_OPERATION_HANDLE_DUPLICATE;
+    OperationRegistrations[0].Operations |= OB_OPERATION_HANDLE_CREATE;
+	OperationRegistrations[0].Operations |= OB_OPERATION_HANDLE_DUPLICATE;
     OperationRegistrations[0].PreOperation = PreOperationCallback;
     OperationRegistrations[0].PostOperation = PostOperationCallback;
 

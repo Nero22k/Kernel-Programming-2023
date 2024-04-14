@@ -5,7 +5,6 @@
 #pragma warning(disable : 4996)
 
 #define TARGET_PROCESS L"notepad.exe"
-#define PROCESS_QUERY_LIMITED_INFORMATION 0x1000
 
 extern void* CallbackRegistrationHandle;
 
