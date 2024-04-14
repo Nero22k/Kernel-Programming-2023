@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KernelPoolsTest", "KernelPo
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Guardian", "Guardian\Guardian.vcxproj", "{938DBE97-3A8F-4A3C-B8BF-2D9C6A057C4E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "kernelCallbacks", "kernelCallbacks\kernelCallbacks.vcxproj", "{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -189,6 +191,24 @@ Global
 		{938DBE97-3A8F-4A3C-B8BF-2D9C6A057C4E}.Release|x86.ActiveCfg = Release|x64
 		{938DBE97-3A8F-4A3C-B8BF-2D9C6A057C4E}.Release|x86.Build.0 = Release|x64
 		{938DBE97-3A8F-4A3C-B8BF-2D9C6A057C4E}.Release|x86.Deploy.0 = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|ARM64.Build.0 = Debug|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x64.ActiveCfg = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x64.Build.0 = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x64.Deploy.0 = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x86.ActiveCfg = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x86.Build.0 = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Debug|x86.Deploy.0 = Debug|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|ARM64.ActiveCfg = Release|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|ARM64.Build.0 = Release|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|ARM64.Deploy.0 = Release|ARM64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x64.ActiveCfg = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x64.Build.0 = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x64.Deploy.0 = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x86.ActiveCfg = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x86.Build.0 = Release|x64
+		{7ABE5EF3-6ECF-4C3B-BCD6-0C4DCFFEA389}.Release|x86.Deploy.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
